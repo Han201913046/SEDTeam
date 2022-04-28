@@ -29,9 +29,9 @@ public class CustomerMapper
   private PersistentCustomer getFromCacheByDetails(String name, String phone)
   {
     PersistentCustomer c = null ;
-    Enumeration enum = cache.elements() ;
-    while (c == null && enum.hasMoreElements()) {
-      PersistentCustomer tmp = (PersistentCustomer) enum.nextElement() ;
+    Enumeration enumeration = cache.elements() ;
+    while (c == null && enumeration.hasMoreElements()) {
+      PersistentCustomer tmp = (PersistentCustomer) enumeration.nextElement() ;
       if (name.equals(tmp.getName()) && phone.equals(tmp.getPhoneNumber())) {
 	c = tmp ;
       }

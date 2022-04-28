@@ -54,9 +54,9 @@ public class BookingSystem
   
   public void notifyObservers()
   {
-    Enumeration enum = observers.elements() ;
-    while (enum.hasMoreElements()) {
-      BookingObserver bo = (BookingObserver) enum.nextElement() ;
+    Enumeration enumeration = observers.elements() ;
+    while (enumeration.hasMoreElements()) {
+      BookingObserver bo = (BookingObserver) enumeration.nextElement() ;
       bo.update() ;
     }
   }
@@ -100,9 +100,9 @@ public class BookingSystem
   public void selectBooking(int tno, Time time)
   {
     selectedBooking = null ;
-    Enumeration enum = currentBookings.elements() ;
-    while (enum.hasMoreElements()) {
-      Booking b = (Booking) enum.nextElement() ;
+    Enumeration enumeration = currentBookings.elements() ;
+    while (enumeration.hasMoreElements()) {
+      Booking b = (Booking) enumeration.nextElement() ;
       if (b.getTableNumber() == tno) {
 	if (b.getTime().before(time)
 	    && b.getEndTime().after(time)) {
@@ -160,9 +160,9 @@ public class BookingSystem
     Time endTime = (Time) startTime.clone() ;
     endTime.setHours(endTime.getHours() + 2) ;
     
-    Enumeration enum = currentBookings.elements() ;
-    while (!doubleBooked && enum.hasMoreElements()) {
-      Booking b = (Booking) enum.nextElement() ;
+    Enumeration enumeration = currentBookings.elements() ;
+    while (!doubleBooked && enumeration.hasMoreElements()) {
+      Booking b = (Booking) enumeration.nextElement() ;
       if (b != ignore && b.getTableNumber() == tno
 	  && startTime.before(b.getEndTime())
 	  && endTime.after(b.getTime())) {

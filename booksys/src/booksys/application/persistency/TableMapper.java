@@ -30,9 +30,9 @@ public class TableMapper
   private PersistentTable getFromCacheByNumber(int tno)
   {
     PersistentTable t = null ;
-    Enumeration enum = cache.elements() ;
-    while (t == null & enum.hasMoreElements()) {
-      PersistentTable tmp = (PersistentTable) enum.nextElement() ;
+    Enumeration enumeration = cache.elements() ;
+    while (t == null & enumeration.hasMoreElements()) {
+      PersistentTable tmp = (PersistentTable) enumeration.nextElement() ;
       if (tmp.getNumber() == tno) {
 	t = tmp ;
       }

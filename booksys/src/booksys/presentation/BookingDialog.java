@@ -51,9 +51,9 @@ abstract class BookingDialog extends Dialog
     
     tableNumberLabel = new Label("Table number:", Label.RIGHT) ;
     tableNumber = new Choice() ;
-    Enumeration enum = BookingSystem.getTableNumbers().elements() ;
-    while (enum.hasMoreElements()) {
-      tableNumber.add(((Integer) enum.nextElement()).toString()) ;
+    Enumeration enumeration = BookingSystem.getTableNumbers().elements() ;
+    while (enumeration.hasMoreElements()) {
+      tableNumber.add(((Integer) enumeration.nextElement()).toString()) ;
     }
     if (booking != null) {
       tableNumber.select(Integer.toString(booking.getTable().getNumber())) ;
