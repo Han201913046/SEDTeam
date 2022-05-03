@@ -10,7 +10,7 @@ package booksys.application.persistency ;
 
 import booksys.application.domain.Customer;
 
-class PersistentCustomer extends Customer
+public class PersistentCustomer extends Customer
 {
   private int oid ;
 
@@ -20,7 +20,7 @@ class PersistentCustomer extends Customer
     oid = id ;
   }
 
-  int getId() {
+  public int getId() {
     return oid ;
   }
 }

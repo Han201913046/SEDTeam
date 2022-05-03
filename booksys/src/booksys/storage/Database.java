@@ -1,5 +1,5 @@
 /*
- * Restaurant Booking System: example code to accompany
+w * Restaurant Booking System: example code to accompany
  *
  * "Practical Object-oriented Design with UML"
  * Mark Priestley
