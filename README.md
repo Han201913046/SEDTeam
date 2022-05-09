@@ -8,5 +8,5 @@
 
 <2022.05.10> 변경사항 <br>
 1. html 코드 jsp로 형식 변경(파일 내용 변경 없음)
-2. jdbc를 위한 mysql-connector.jar 추가
--박시은-
+2. jdbc를 위한 mysql-connector.jar 추가 
+<br>-박시은-
