@@ -10,3 +10,13 @@
 1. html 코드 jsp로 형식 변경(파일 내용 변경 없음)
 2. jdbc를 위한 mysql-connector.jar 추가 
 <br>-박시은-
+
+<2022.05.10> 변경사항<br>
+1. DB 연동버전 -> DBTest Branch에 커밋<br>
+ 데이터베이스 커넥터 및 액세스 클래스 (DAO, DTO) 미완성본입니다.<br>
+ 구버전 booksys 파일은 삭제했으니까 이 점 참고해주세요.<br>
+ 오늘(5/10)까지 DAO 클래스 sql문 작성 완성/DB 서버 연동할 예정입니다.<br>
+ 
+2. 아래 영상에 DB와 jsp 연동 방법이 잘 나와있어서 보시면 좋을 것 같습니다.<br>
+https://youtu.be/1Wuwl57cXvw<br>
+-정진주(PO)-
