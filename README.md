@@ -11,7 +11,7 @@
 2. jdbc를 위한 mysql-connector.jar 추가 
 <br>-박시은-
 
-<2022.05.10> 변경사항 <br>
+<2022.05.10> 변경사항
 1. DB 연동버전 -> DBTest Branch에 커밋<br>
  데이터베이스 커넥터 및 액세스 클래스 (DAO, DTO) 미완성본입니다. <br>
  구버전 booksys 파일은 삭제했으니까 이 점 참고해주세요. <br>
