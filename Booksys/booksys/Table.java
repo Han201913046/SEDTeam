@@ -1,8 +1,14 @@
 package booksys;
 
 public class Table {
-	int number;
-	int seats;
+	private int number;
+	private int seats;
+	
+	public Table(int number, int seats) {
+		super();
+		this.number = number;
+		this.seats = seats;
+	}
 
 	public int getNumber() {
 		return number;

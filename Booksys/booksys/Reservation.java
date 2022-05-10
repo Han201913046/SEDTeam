@@ -4,12 +4,22 @@ import java.sql.Time;
 import java.sql.Date;
 
 public class Reservation {
-	User user;
-	Table table;
-	int covers;
-	Date date;
-	Time time;
-	Time arrivalTime;
+	private User user;
+	private Table table;
+	private int covers;
+	private Date date;
+	private Time time;
+	private Time arrivalTime;
+	
+	public Reservation(User user, Table table, int covers, Date date, Time time, Time arrivalTime) {
+		super();
+		this.user = user;
+		this.table = table;
+		this.covers = covers;
+		this.date = date;
+		this.time = time;
+		this.arrivalTime = arrivalTime;
+	}
 
 	public User getUser() {
 		return user;

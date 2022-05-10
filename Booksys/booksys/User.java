@@ -1,10 +1,18 @@
 package booksys;
 
 public class User {
-	String id;
-	String pw;
-	String name;
-	String phoneNumber;
+	private String id;
+	private String pw;
+	private String name;
+	private String phoneNumber;
+
+	public User(String id, String pw, String name, String phoneNumber) {
+		super();
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+	}
 
 	public String getId() {
 		return id;
