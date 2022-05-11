@@ -9,14 +9,14 @@
         <meta name="author" content="" />
         <title>SE-DTEAM</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../../../../../frontend-SEDTeam/assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../../../../../frontend-SEDTeam/css/styles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
         <style>
             .main {
                 width: 400px;
@@ -69,17 +69,17 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="../../../../../frontend-SEDTeam/assets/img/navbar-logo.svg" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.jsp">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html">Log-in</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reservation.jsp">Reservation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.jsp">Log-in</a></li>
                     </ul>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                         <input type="text" placeholder="ID" id="id" class="account" size="37"><br>
                         <input type="password" placeholder="Password" id="password" class="account" size="37"><br>
                         <input type="password" placeholder="Password" id="password" class="account" size="37"><br><br>
-                        <button id="sign" class="account"><a href="signup.html"></a> sign-up</button>
+                        <button id="sign" class="account"><a href="signup.jsp"></a> sign-up</button>
                         <p id="alert" class="account"> </p>
                     </div>
 
