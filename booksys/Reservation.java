@@ -5,20 +5,20 @@ import java.sql.Date;
 
 public class Reservation {
 	private User user;
-	private Table table;
+	private int tableNum;
 	private int covers;
 	private Date date;
 	private Time time;
 	private Time arrivalTime;
 	
-	public Reservation(User user, Table table, int covers, Date date, Time time, Time arrivalTime) {
+	public Reservation(User user, int tableNum, int covers, Date date, Time time) {
 		super();
 		this.user = user;
-		this.table = table;
+		this.tableNum = tableNum;
 		this.covers = covers;
 		this.date = date;
 		this.time = time;
-		this.arrivalTime = arrivalTime;
+		this.arrivalTime = null;
 	}
 
 	public User getUser() {
@@ -29,12 +29,12 @@ public class Reservation {
 		this.user = user;
 	}
 
-	public Table getTable() {
-		return table;
+	public int getTableNum() {
+		return tableNum;
 	}
 
-	public void setTable(Table table) {
-		this.table = table;
+	public void setTable(int tableNum) {
+		this.tableNum = tableNum;
 	}
 
 	public int getCovers() {

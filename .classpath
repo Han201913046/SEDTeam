@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-<<<<<<< HEAD
-	<classpathentry kind="src" path="Booksys"/>
-=======
->>>>>>> refs/remotes/origin/DBTest
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
-<<<<<<< HEAD
-	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_321/lib/mysql-connector-java-8.0.29.jar">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
-=======
-	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_311/lib/mysql-connector-java-8.0.29.jar"/>
-	<classpathentry kind="src" path="src"/>
->>>>>>> refs/remotes/origin/DBTest
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

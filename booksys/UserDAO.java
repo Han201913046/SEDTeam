@@ -7,22 +7,20 @@ import java.sql.ResultSet;
 import utill.DatabaseUtill;
 
 public class UserDAO {
-	private ResultSet rs = null;
-
 	public User selectUser(String id) {
 		String sql = "SELECT * FROM user WHERE id = ?";
 		User user = null;
 		try {
 			Connection conn = DatabaseUtill.getConnection();
 			PreparedStatement pstmt = conn.prepareStatement(sql);
+			ResultSet rs = null;
 			pstmt.setString(1, id);
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-				String ID = rs.getString(1);
 				String PW = rs.getString(2);
 				String name = rs.getString(3);
 				String phoneNumber = rs.getString(4);
-				user = new User(ID, PW, name, phoneNumber);
+				user = new User(id, PW, name, phoneNumber);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
