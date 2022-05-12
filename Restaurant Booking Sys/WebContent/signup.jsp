@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -91,11 +91,17 @@
                 <div class="main">
                     <h1 class="logo">Sign-up</h1>
                     <div class="container">
-                        <input type="text" placeholder="ID" id="id" class="account" size="37"><br>
-                        <input type="password" placeholder="Password" id="password" class="account" size="37"><br>
-                        <input type="password" placeholder="Password" id="password" class="account" size="37"><br><br>
-                        <button id="sign" class="account"><a href="signup.jsp"></a> sign-up</button>
-                        <p id="alert" class="account"> </p>
+                    	<form method="post" action="signupAction.jsp">
+                    		<input type="text" placeholder="ID" id="id" name="id" class="account" size="37"><br>
+	                        <input type="password" placeholder="Password" id="pw" name="pw" class="account" size="37"><br>
+	                        <input type="text" placeholder="이름" id="name" name="name" class="account" size="37"><br>
+	                        <input type="text" placeholder="Phone Number" id="phoneNumber" name="phoneNumber" class="account" size="37"><br><br>
+<!-- 	                        <button type="submit" id="sign" class="account"><a href="signup.jsp"></a> sign-up</button> -->
+<!-- 	                        <p id="alert" class="account"> </p> -->
+<!-- 							<input type="submit" id="sign" class="btn btn-primary form-control" value="회원가입"> -->
+                    		<input type="submit" id="sign" class="account" value="signup">
+                    	</form>
+            
                     </div>
 
                 </div>   

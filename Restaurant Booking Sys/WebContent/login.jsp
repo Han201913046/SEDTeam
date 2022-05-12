@@ -91,13 +91,17 @@
                 <div class="main">
                     <h1 class="logo">Log-in</h1>
                     <div class="container">
-                        <input type="text" placeholder="ID" id="id" class="account" size="37"><br>
-                        <input type="password" placeholder="Password" id="password" class="account" size="37"><br><br>
-                        <button id="login" class="account" data-sb-validations="required">login</button>
-                        <div class="invalid-feedback" data-sb-feedback="phone:required">ID or Password is incorrect.</div>
-                        <p id="alert" class="account"> </p>
-                        <button id="sign" class="account"><a href="signup.jsp">Sign-up</a> </button>
-                        <p id="alert" class="account"> </p>
+                    	<form method="post" action="loginAction.jsp">
+	                        <input type="text" placeholder="ID" id="id" name="id" class="account" size="37"><br>
+	                        <input type="password" placeholder="Password" id="password" name="pw" class="account" size="37"><br><br>
+	                        <button id="login" class="account" data-sb-validations="required">login</button>
+	                        <div class="invalid-feedback" data-sb-feedback="phone:required">ID or Password is incorrect.</div>
+	                        <p id="alert" class="account"> </p>
+<!-- 	                        <button id="sign" class="account"><a href="signup.jsp">Sign-up</a> </button> -->
+<!-- 	                        <p id="alert" class="account"> </p> -->
+	                    </form>
+	                    <button id="sign" class="account"><a href="signup.jsp">Sign-up</a> </button>
+	                    <p id="alert" class="account"> </p>
                     </div>
 
                 </div>   
