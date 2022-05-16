@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SE-DTEAM</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../../../../../frontend-SEDTeam/assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../../../../../frontend-SEDTeam/css/styles.css" rel="stylesheet" />
+        <style>
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+
+                opacity: 1;
+
+            }<!--예약 페이지 스크롤 남기기-->
+            .text-start {
+              text-align: left !important;
+              margin:10px auto;
+              } <!--띄우기-->
+        td style{text-align: center;}
+       
+        
+        table{
+            width: 460px; height: 336px;
+            float: right;
+            margin-right: 15px;
+            background-color: #212529;
+            
+           
+        }
+        table, tr, td {
+            border : none;
+            border-collapse : collapse;
+          }
+        
+         
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="../../../../../frontend-SEDTeam/assets/img/navbar-logo.svg" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Log-in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Reservation</h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Name *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="date" type="date" placeholder="Date *" data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">The Date is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Date is not valid.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="number" type="number" placeholder="Number *"
+                                   min="1" max="6" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="number:required">The number is required.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" data-sb-validations="required" placeholder="PhoneNumber *" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"/> <!-- 전화번호 넣기-->
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                       
+                        
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <table class="scrolltable">
+                            <tr>
+                            <td><button type="button" class="btm_image" id="img_btn"><img src="table2.png" width="130px" height="100px" ></button></td>
+                        <td><button type="button" class="btm_image" id="img_btn"><img src="table2.png" width="130px" height="100px"></button></td>
+                            </tr>
+                            <tr>
+                           <td> <button type="button" class="btm_image" id="img_btn"><img src="table4.png" width="130px" height="100px"></button></td>
+                            <td><button type="button" class="btm_image" id="img_btn"><img src="table4.png" width="130px" height="100px"></button></td></tr>
+                            <tr><td colspan="2"><button type="button" class="btm_image" id="img_btn"><img src="table6.png" width="150px" height="120px" ></button></td>
+                            </tr>
+
+
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div>
+                    </table>
+                    </div>
+                    <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div></div>
+
+                <!-- Submit Button-->
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Reservation</button></div>
+
+    </body>
+</html>
